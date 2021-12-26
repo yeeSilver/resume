@@ -1,0 +1,13 @@
+과제 1)
+모바일 사이즈 일때, header에 변화 주기
+1. PC기준 header는 display: none 처리
+2. 모바일 기준일 때, 버튼으로 햄버거 모양 구현(오른쪽 하단에 위치)
+3. 햄버거모양 호버했을 때, 메뉴 주루륵 나오기
+article.mobile-menu
+[ul>li>a.btn-menu / button.btn-mode] / button.btn-toggle-menu
+
++ 옵션 : 메뉴에 호버했을 때 효과
+
++ 색상 정하기, 폰트 깔끔한 거 선택
+
+언제? 12월 26일(일) 오후 9시까지
