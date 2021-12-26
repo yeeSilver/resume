@@ -1,0 +1,20 @@
+반응형 nav bar를 위에 잡은 이유
+: iphone sw upgrade되면서 url바가 상단이 아닌 하단에 위치하도록 디자인이
+ 변경되었기 때문에
+
+export const MEDIA_QUEY_END_POINT = {
+
+	mobile : 640px
+	tablet 1280px
+	desktop 1920px
+	large 2560px
+}
+
+min-width : 641px (641이상 pc)
+-> 640px까지는 모바일
+
+
+질문)
+@media screen and(min-width) and (max) 를 쓰는 게 좋은 지
+@media screen and (min-width)를 쓰는 게 좋은지 
+	 -> min-width 가 계속 쌓여가는 것임
