@@ -1,28 +1,30 @@
+// mobile
 const btn_toggle = document.querySelector('.btn-toggle-menu');
 const list_toggle_menu = document.querySelector('.list-toggle-menu');
+const mode_img = document.querySelector('.mobile-menu .btn-mode img');
+// pc
+const mode_go = document.querySelector('.mode-go');
+const header = document.querySelector('.header');
+// 공통
+const modes = document.querySelectorAll('.btn-mode');
+const body = document.body;
 
+// click시 m-list 내려오도록
 btn_toggle.addEventListener('click', function(){
     if (list_toggle_menu.style.display ==='none'){
-        list_toggle_menu.style.display ='flex';
+        list_toggle_menu.style.display ='block';
     }else{
         list_toggle_menu.style.display ='none';
         }
 })
-
-//클래스로 토글
-const mode_go = document.querySelector('.mode-go');
-const header = document.querySelector('.header');
-const modes = document.querySelectorAll('#mode');
-const mode_img = document.querySelector('.btn-menu-mode img');
-const body = document.body;
+console.log(mode_img)
 modes.forEach(function(mode){
     mode.addEventListener('click', function(){
         if(!body.classList.contains('dark')){
             header.style.backgroundColor = 'grey';
-            // header.classList.add('dark');
             body.classList.add('dark');
             // modes[1].img.src='../img/light_mode.svg'
-            mode_img.src='../img/light_mode.svg'
+            mode_img.src=`../img/light_mode.svg`;
             modes[0].classList.add('mode_go','dark');
             modes[0].innerHTML=`LIGHT`;
         }else{
@@ -35,3 +37,11 @@ modes.forEach(function(mode){
         }
     })
 })
+
+// btn-download resume
+// const btn_resume = document.querySelector('.btn-down-resume');
+// btn_resume.addEventListener('click', function(){
+//         const link = document.getElementById('link');
+//         const imgUrl = 
+//         link.setAttribute('href',)
+// })

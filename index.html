@@ -30,24 +30,66 @@
         </nav>
             <!-- nav안에 있는 거는 어디로 가는 링크를 제공하는 것. 이동이 되는. 길을 알려주는 태그-> 버튼의 기능/용도는 nav의 기능과 맞지 않으므로 따로 두는 것이 더 시맨틱 할 듯 -->
             <div class="cont-mode">
-                <button class="btn-mode" id="mode">DARK</button>
+                <button class="btn-mode">DARK</button>
             </div>
     </header>
+
     <article class="mobile-menu">
-            <div class="cont-toggle-menu">
-                <button class="btn-toggle-menu">
-                    <img src="./img/hamburger.svg" alt="">
-                </button>
-            </div>
+        <!-- div를 감싸지 않아도 될 듯. -->
+        <button class="btn-toggle-menu">
+            <img src="./img/hamburger.svg" alt="">
+        </button>
+        <button class="btn-mode"><img src="./img/light_mode.svg" alt=""></button>
+        <nav>
             <ul class="list-toggle-menu">
-                <li><button class="btn-menu-mode" id="mode"><img src="./img/light_mode.svg" alt=""></button></li>
-                <li><a href="#" class="btn-menu">home</a></li>
-                <li><a href="#" class="btn-menu">about me</a></li>
-                <li><a href="#" class="btn-menu">projects</a></li>
-                <li><a href="#" class="btn-menu">contact</a></li>
-                <li><a href="#" class="btn-menu">blog</a></li>
+                <!-- <li><button class="btn-menu-mode" id="mode"><img src="./img/light_mode.svg" alt=""></button></li> -->
+                <li><a href="#">home</a></li>
+                <li><a href="#">about me</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">blog</a></li>
             </ul>
+        </nav>
     </article>
+
+    <!-- 첫번째 페이지 -->
+    <section class="sec-main">
+        <div class="img-background"></div>
+        <article class="art-main">
+            <!--  <header> It may contain some heading elements but also a logo, a search form, an author name, and other elements. -->
+            <header class="head-introduce">
+                <h2>YEEUN AN</h2>
+                <p class="txt-job">CREATIVE FRONT-END WEB DEVELOPER</p>
+                <p class="txt-hello">Hello World</p>
+            </header>
+            <div class="btn-down-resume"><a href="./img/보리님편집.jpg" download="YeeunAn resume">Download Resume</a></div>
+            <!-- https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf -->
+            <!-- <button type ="button" class="btn-down-resume">Download Resume</button> -->
+            <!-- section or div ? -->
+            <div class="cont-codebox">
+                <pre>
+                    1   class Person{
+                    2       constructor(){
+                    3           this.name = "<b>Yeeun An</b>";
+                    4           this.skills = <b>["Html", "Css", "JS", "Three.js", "D3", "Bootstrap", "nodeJs"]</b>;
+                    5           this.age = new Date().getFullYear()-1998+1;
+                    6           }
+                    7       };
+                </pre>
+            </div>
+            <ul class="list-sns">
+                <li class="github"><a href="">
+                    <img src="./img/github.svg" alt="github address">
+                </a></li>
+                <li class="velog"><a href="">
+                    <img src="./img/vimeo.svg" alt="">
+                </a></li>
+                <li class="insta"><a href="">
+                    <img src="./img/instagram.svg" alt="">
+                </a></li>
+            </ul>
+        </article>
+    </section>
     <script src="./src/main.js"></script>
 </body>
 </html>

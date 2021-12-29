@@ -1,11 +1,14 @@
 @charset "utf-8"; 
 /* @charset "utf-8"을 넣지 않으면 seo 낮은 점수 */
 @import "./reset.css";
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Luxurious+Roman&family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Luxurious+Roman&family=Sigmar+One&family=Stint+Ultra+Condensed&family=Ubuntu+Mono&family=Ultra&display=swap');
 /* css는 css끼리! */
-/* font-family: 'Do Hyeon', sans-serif;
+/*font-family: 'Do Hyeon', sans-serif;
 font-family: 'Luxurious Roman', cursive;
-font-family: 'Sigmar One', cursive;*/
+font-family: 'Sigmar One', cursive;
+font-family: 'Stint Ultra Condensed', cursive;
+font-family: 'Ubuntu Mono', monospace;
+font-family: 'Ultra', serif;*/
 
 body{
     font-family: 'Luxurious Roman', cursive;
@@ -17,68 +20,170 @@ body{
 }
 
 .mobile-menu{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 10px;
+    position: fixed;
+    right: 10px;
+    top: 0;
+    z-index: 100;
 }
-.mobile-menu .cont-toggle-menu{
-    display: inline-block;
-    margin-right: 12.5px;
-    border-radius: 50%;
-    background-color: #D98BA7;
-}
-.mobile-menu .cont-toggle-menu .btn-toggle-menu{
+/* inline-block보다는 flex를 쓰는 게 더 기능 구현에 알맞다. 유연하게 대처할 수 있는 느낌쓰 */
+.mobile-menu .btn-toggle-menu, 
+.mobile-menu .btn-mode{
+    display: block;
     width: 65px;
     height: 65px;
-    margin: 0 auto;
+    margin: 5px auto;
+    border-radius: 50%;
     border: none;
-    background: none;
+    background-color: #D98BA7;
     cursor: pointer;
 }
-.mobile-menu .cont-toggle-menu .btn-toggle-menu img:hover{
+.mobile-menu .btn-toggle-menu img:hover{
     content: url(../img/close.svg);
 }
 
-.list-toggle-menu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 .list-toggle-menu li{
     margin: 5px 0;
+    /* font-weight: 600; */
+    transition: all .3s;
 }
-.list-toggle-menu li .btn-menu-mode{
-    width: 65px;
-    height: 65px;
-    border: none;
-    border-radius: 50%;
-    background-color: #D98BA7;
-    color: #BDEDF2;
-    cursor: pointer;
-}
-
-.list-toggle-menu .btn-menu{
-    display: inline-block;
+.list-toggle-menu li a{
+    /* anchor태그에 크기 자체를 block으로 해서 너비 높이 값을 설정한다. (클릭할 때 전체 li값이 선택될 수 있게) */
+    display: block;
     width: 60px;
     padding: 15px;
     border-radius: 10px;
     color: #BDEDF2;
     background-color: #D98BA7;
-    /* font-weight: 600; */
     text-align: center;
 }
-.list-toggle-menu .btn-menu:hover{
+.list-toggle-menu li:hover, .btn-mode:hover{
     font-weight: bold;
-    width: 55px;
+    transform: scale(0.9);
 }
 
+/* 첫번째 페이지 */
+.sec-main{
+    position: relative;
+    height: 100vh;
+    margin: 0 20px;
+}
+.art-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    /* background-image: url(../img/pink-paper.jpg); */
+}
+.img-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/pink-paper.jpg);
+    z-index: -100;
+}
+/* header-introduce */
+.art-main .head-introduce{
+    margin-top: 60px;
+    line-height: 30px;
+    text-align: center;
+    font-family: 'Ultra', serif;
+    font-size: small;
+}
+.art-main .head-introduce h2{
+    /* color: rgb(189, 101, 138); */
+    font-size: 35px;
+    font-weight: 900;
+}
+/* pre */
+.art-main .cont-codebox pre{
+    overflow: auto;
+    margin: 60px 30px 0;
+    padding: 20px;
+    border-radius: 15px;
+    /* background-color: rgb(240, 234, 234); */
+    white-space: pre-line;
+    font-family: 'Ubuntu Mono', monospace;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+    /* background-color: whitesmoke; */
+}
+/* btn, sns */
+.btn-down-resume{
+    position: relative;
+    overflow: hidden;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: 'Ubuntu Mono', monospace;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.btn-down-resume:focus{
+    outline: none;
+}
+.btn-down-resume:hover{
+    box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.6);
+}
+.btn-down-resume::before{
+    content: '';
+    position: absolute;
+    top:100%;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: #D98BA7;
+    transition: all .5s;
+    z-index: -1;
+}
+.btn-down-resume:hover:before{
+    transform: translateY(-100%);
+}
+
+.art-main .list-sns{
+    display: flex;
+    flex-direction: row;
+    margin: 70px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.art-main .list-sns li{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.art-main .list-sns li a{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+}
+.art-main .list-sns .velog{
+    margin: 0 10px;
+} 
+.art-main .list-sns li a:hover{
+    transform: scale(0.9);
+    filter: invert(74%) sepia(5%) saturate(3559%) hue-rotate(293deg) brightness(86%) contrast(97%);
+}
+
+
+/* 토글 클래스 */
 .dark{
     color: rgb(207, 206, 206);
     background-color: rgb(63, 63, 63);
 }
+.toggle{
+    display: none;
+}
 
+/* pc */
 @media screen and (min-width: 641px) {
     /* header.header */
     .header{
@@ -92,6 +197,7 @@ body{
         padding: 20px 40px;
         background-color: rgba(255, 255, 255, 0.884);
         font-size: 18px;
+        z-index: 100;
     }
     .header .logo{
         position: absolute; 
@@ -144,8 +250,6 @@ body{
     .mode-go{
         transform: translateX(15px);
     }
-
-
     .mobile-menu{
         display: none;
     }
