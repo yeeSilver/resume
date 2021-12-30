@@ -1,0 +1,205 @@
+/* 첫번째 페이지 */
+.sec-main{
+    position: relative;
+    height: 100vh;
+    margin: 0 20px;
+}
+.art-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    /* background-image: url(../img/pink-paper.jpg); */
+}
+.img-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    /* background-image: url(../img/pink-paper.jpg); */
+    z-index: -100;
+}
+/* header-introduce */
+.art-main .head-introduce{
+    margin-top: 60px;
+    line-height: 30px;
+    text-align: center;
+    font-family: 'Ultra', serif;
+    font-size: small;
+}
+.art-main .head-introduce strong{
+    font-size: 35px;
+    font-weight: 900;
+}
+/* codebox */
+.box-circle {
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+    background-color: rgb(54, 54, 54);
+}
+.box-circle li{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+}
+.box-circle li:nth-child(2){
+    background-color: yellow;
+}
+.box-circle li:nth-child(3){
+    background-color: green;
+}
+/* overflow하려면 width, height값이 정해져야 하고 콘텐츠가 크기 값을 넘어갈 때 해당 너비나 높이 값보다 넘어설때 스크롤이 생기게 할 것인지 hidden 처리를 할 것인지를 선택 auto를 하면 넘치면 scroll생김*/
+.intro-deco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.art-main .intro-deco .cont-codebox{
+    position: relative;
+    margin: 60px 30px 0;
+    border-radius: 15px;
+    background-color: black;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.art-main .intro-deco .cont-codebox div{
+    /* background-color: rgb(240, 234, 234); */
+    /* font-family: 'Ubuntu Mono', monospace; */
+    padding: 30px;
+    color: rgb(218, 236, 191);
+}
+
+.box-color{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    display: flex;
+    padding: 20px 10px;
+    border-radius: 15px;
+    background-color: black;
+}
+.box-color li{
+    /* display: inline-block; */
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0 8px;
+}
+.box-color li:nth-child(1){
+    background-color: #b67191;
+}
+.box-color li:nth-child(2){
+    background-color: #D98BA7;
+}
+.box-color li:nth-child(3){
+    background-color: #BDEDF2;
+}
+.box-color li:nth-child(4){
+    background-color: goldenrod;
+}
+/* btn, sns */
+.art-main .intro{
+    text-align: center;
+}
+.btn-down-resume{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: 'Ubuntu Mono', monospace;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.btn-down-resume:focus{
+    outline: none;
+}
+.btn-down-resume:hover{
+    box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.6);
+}
+.btn-down-resume::before{
+    content: '';
+    position: absolute;
+    top:100%;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: #D98BA7;
+    transition: all .5s;
+    z-index: -1;
+}
+.btn-down-resume:hover:before{
+    transform: translateY(-100%);
+}
+
+.art-main .intro-deco .list-sns{
+    display: flex;
+    margin: 70px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 3px rgba(0, 0, 0, 0.2);
+}
+/* position 남발 금지! */
+.art-main .intro-deco .list-sns li{
+    width: 30px;
+    height: 30px;
+}
+.art-main .intro-deco .list-sns li a{
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+}
+.art-main .intro-deco .list-sns li a img{
+    width: 100%;;
+}
+.art-main .intro-deco .list-sns .velog{
+    margin: 0 10px;
+} 
+.art-main .intro-deco .list-sns li a:hover{
+    transform: scale(0.9);
+    filter: invert(74%) sepia(5%) saturate(3559%) hue-rotate(293deg) brightness(86%) contrast(97%);
+}
+
+@media screen and (min-width: 641px){
+    .art-main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .art-main .intro .head-introduce strong{
+        font-size: 50px;
+    }
+    .art-main .intro .head-introduce {
+        font-size: 20px;
+    }
+    .art-main .intro .head-introduce .txt-job{
+        margin-top: 50px;
+    }
+    .art-main .intro .head-introduce .txt-hello{
+        margin-bottom: 50px;
+    }
+    .art-main .intro .btn-down-resume{
+        font-size: 20px;
+    }
+    .intro-deco{
+        margin-top: 100px;
+    }
+    .box-color{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-100%, 50%);
+        display: flex;
+        padding: 20px 10px;
+        border-radius: 15px;
+        background-color: black;
+    }
+}

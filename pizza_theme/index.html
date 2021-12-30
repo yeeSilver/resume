@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi there! Yeeun An portfolio site</title>
+    <link rel="stylesheet" href="../src/reset.csss">
+    <link rel="stylesheet" href="./pizza.css">
+</head>
+<body>
+    <header class="header">
+        <!-- logo 1) h1 : 탭키로 이동하면 처음에 로고에 포커스가 갈 것 같으니, 먼저 로고에 h1을 주면 먼저 포트폴리오 사이트다 라는 걸 알려주는 게 더 효율적. 로고를 알려주는 동시에 이 사이트가 포트폴리오 사이트라는 걸 알려주는 게 좋습니다.
+            혹은 2) figure : 그림을 알려주는 것-->
+        <h1 class="logo">
+            <a href="#">
+                <!-- <img src="./img/보리님편집.jpg" alt="안예은의 포트폴리오 사이트 로고"> -->
+                YEEUN
+            </a>
+        </h1>
+        <nav>
+            <ul class="list-menu">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about me</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">blog</a></li>
+                <!-- html로 blog 직접 구현하기 -->
+            </ul>
+        </nav>
+            <!-- nav안에 있는 거는 어디로 가는 링크를 제공하는 것. 이동이 되는. 길을 알려주는 태그-> 버튼의 기능/용도는 nav의 기능과 맞지 않으므로 따로 두는 것이 더 시맨틱 할 듯 -->
+            <div class="cont-mode">
+                <button class="btn-mode">DARK</button>
+            </div>
+    </header>
+
+    <article class="mobile-menu">
+        <!-- div를 감싸지 않아도 될 듯. -->
+        <button class="btn-toggle-menu">
+            <img src="./img/hamburger.svg" alt="">
+        </button>
+        <button class="btn-mode"><img src="./img/light_mode.svg" alt=""></button>
+        <nav>
+            <ul class="list-toggle-menu">
+                <!-- <li><button class="btn-menu-mode" id="mode"><img src="./img/light_mode.svg" alt=""></button></li> -->
+                <li><a href="#">home</a></li>
+                <li><a href="#">about me</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">blog</a></li>
+            </ul>
+        </nav>
+    </article>
+    <script src="./pizza.js"></script>
+</body>
+</html>

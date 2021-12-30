@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi there! Yeeun An portfolio site</title>
     <!-- <link rel="stylesheet" href="./css/reset.css"> -->
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
@@ -37,14 +37,14 @@
     <article class="mobile-menu">
         <!-- div를 감싸지 않아도 될 듯. -->
         <button class="btn-toggle-menu">
-            <img src="./img/hamburger.svg" alt="">
+            <img src="./src/icon/hamburger.svg" alt="">
         </button>
-        <button class="btn-mode"><img src="./img/light_mode.svg" alt=""></button>
+        <button class="btn-mode"><img src="./src/icon/dark_mode.svg" alt=""></button>
         <nav>
             <ul class="list-toggle-menu">
                 <!-- <li><button class="btn-menu-mode" id="mode"><img src="./img/light_mode.svg" alt=""></button></li> -->
-                <li><a href="#">home</a></li>
-                <li><a href="#">about me</a></li>
+                <li><a href="#sec-main">home</a></li>
+                <li><a href="#sec-aboutMe">about me</a></li>
                 <li><a href="#">projects</a></li>
                 <li><a href="#">contact</a></li>
                 <li><a href="#">blog</a></li>
@@ -53,43 +53,79 @@
     </article>
 
     <!-- 첫번째 페이지 -->
-    <section class="sec-main">
+    <section class="sec-main" id="sec-main">
         <div class="img-background"></div>
         <article class="art-main">
-            <!--  <header> It may contain some heading elements but also a logo, a search form, an author name, and other elements. -->
-            <header class="head-introduce">
-                <h2>YEEUN AN</h2>
-                <p class="txt-job">CREATIVE FRONT-END WEB DEVELOPER</p>
-                <p class="txt-hello">Hello World</p>
-            </header>
-            <div class="btn-down-resume"><a href="./img/보리님편집.jpg" download="YeeunAn resume">Download Resume</a></div>
-            <!-- https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf -->
-            <!-- <button type ="button" class="btn-down-resume">Download Resume</button> -->
-            <!-- section or div ? -->
-            <div class="cont-codebox">
-                <pre>
-                    1   class Person{
-                    2       constructor(){
-                    3           this.name = "<b>Yeeun An</b>";
-                    4           this.skills = <b>["Html", "Css", "JS", "Three.js", "D3", "Bootstrap", "nodeJs"]</b>;
-                    5           this.age = new Date().getFullYear()-1998+1;
-                    6           }
-                    7       };
-                </pre>
+            <div class="intro">
+                <!--  <header> It may contain some heading elements but also a logo, a search form, an author name, and other elements. -->
+                <h2 class="head-introduce">
+                    <strong>YEEUN AN</strong>
+                    <p class="txt-job">CREATIVE FRONT-END WEB DEVELOPER</p>
+                    <p class="txt-hello">Hello World</p>
+                </h2>
+                <div class="btn-down-resume"><a href="./src/img/보리님편집.jpg" download="YeeunAn resume">Download Resume</a></div>
+                <!-- <button type ="button" class="btn-down-resume">Download Resume</button> -->
+                <!-- section or div ? -->
             </div>
-            <ul class="list-sns">
-                <li class="github"><a href="">
-                    <img src="./img/github.svg" alt="github address">
-                </a></li>
-                <li class="velog"><a href="">
-                    <img src="./img/vimeo.svg" alt="">
-                </a></li>
-                <li class="insta"><a href="">
-                    <img src="./img/instagram.svg" alt="">
-                </a></li>
-            </ul>
+            <div class="intro-deco">
+                <div class="cont-codebox">
+                    <ul class="box-circle">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <pre>1  class Person{</pre>
+                        <pre>2     constructor(){</pre>
+                        <pre>3         this.name = "<b>Yeeun An</b>";</pre>
+                        <pre>4         this.skills = <b>["Html", "Css", "JS", "Three.js", "D3", "Bootstrap", "nodeJs"]</b>;</pre>
+                        <pre>5         this.age = new Date().getFullYear()-1998+1;</pre>
+                        <pre>6    }</pre>
+                        <pre>7  };</pre>
+                    </div>
+
+                    <ul class="box-color">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <ul class="list-sns">
+                    <li class="github"><a href="">
+                        <img src="./src/sns/github.svg" alt="github address">
+                    </a></li>
+                    <li class="velog"><a href="">
+                        <img src="./src/sns/vimeo.svg" alt="">
+                    </a></li>
+                    <li class="insta"><a href="">
+                        <img src="./src/sns/instagram.svg" alt="">
+                    </a></li>
+                </ul>
+            </div>
         </article>
     </section>
-    <script src="./src/main.js"></script>
+    <!-- about me -->
+    <section class="sec-aboutMe" id="sec-aboutMe">
+        <h3>About Me</h3> 
+        <div class="con-aboutMe">
+            <div class="myImg"><img src="./src/img/보리님77.jpg" alt=""></div>
+            <div class="txt-aboutMe">
+                <strong>&ldquo; 1 DAY 1 PAGE &rdquo;</strong>
+                <p>
+                    성실하게 나아가자!라는 마음가짐으로 성장하고 있는 <br>밝은 거북이, <strong>안예은</strong> 입니다.   
+                </p>
+                <p>
+                    commit 메시지와 branch 단위에 대해 생각하는 것을 좋아합니다. <br>팀원들과 협업에 있어서 효율적인 방안을 고려하고 나아가는 개발자이자 듬직한 팀원이 되기 위해 노력중입니다.
+                </p>
+            </div> 
+        </div>
+        <ul class="card-aboutMe">
+            <li><p>밝고 긍정적인 힘!</p></li>
+            <li><p>가독성좋은 README.md</p></li>
+            <li><p>세번째</p></li>
+        </ul>
+    </section>
+    <!-- <script src="./javascript/main.js"></script> -->
 </body>
 </html>

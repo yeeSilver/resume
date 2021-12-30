@@ -38,10 +38,3 @@ modes.forEach(function(mode){
     })
 })
 
-// btn-download resume
-// const btn_resume = document.querySelector('.btn-down-resume');
-// btn_resume.addEventListener('click', function(){
-//         const link = document.getElementById('link');
-//         const imgUrl = 
-//         link.setAttribute('href',)
-// })

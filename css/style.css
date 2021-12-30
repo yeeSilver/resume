@@ -1,0 +1,29 @@
+@charset "utf-8"; 
+/* @charset "utf-8"을 넣지 않으면 seo 낮은 점수 */
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Luxurious+Roman&family=Sigmar+One&family=Stint+Ultra+Condensed&family=Ubuntu+Mono&family=Ultra&display=swap');
+
+@import "./reset.css";
+@import "./variable.css";
+@import "./components/header.css";
+@import "./components/toggle.css";
+@import "./components/m-nav.css";
+@import "./components/intro.css";
+@import "./components/aboutMe.css";
+
+body{
+    font-family: 'Luxurious Roman', cursive;
+    background-color: #F2D8E4;
+}
+/* css는 css끼리! */
+/*font-family: 'Do Hyeon', sans-serif;
+font-family: 'Luxurious Roman', cursive;
+font-family: 'Sigmar One', cursive;
+font-family: 'Stint Ultra Condensed', cursive;
+font-family: 'Ubuntu Mono', monospace;
+font-family: 'Ultra', serif;*/
+
+
+
+
+
+
