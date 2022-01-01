@@ -12,16 +12,34 @@
     align-items: center;
     justify-content: center;
 }
-.sec-aboutMe h3{
+h3{
+    margin: 100px 0;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+/* .sec-aboutMe h3{
     margin: 100px 0;
     font-weight: 600;
     font-size: 36px;
+} */
+.sec-aboutMe .con-aboutMe .img-background-aboutMe {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    /* background: url(../../src/img/pink-paper.jpg); */
+    background-color: whitesmoke;
+    transform: skewY(-3deg);
+    z-index: -10;
 }
 .sec-aboutMe div .myImg img{
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background-size: contain;
+}
+.sec-aboutMe div .myImg{
+    border-radius: 50%;
+    box-shadow: -2px 2px 20px 1px rgba(0, 0, 0, 0.2)
 }
 .sec-aboutMe div .txt-aboutMe{
     margin-top: 30px;

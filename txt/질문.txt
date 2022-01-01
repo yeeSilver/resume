@@ -3,3 +3,10 @@
 
 2. header vs div
 3. section vs div -> section은 너무 큰 범위 같아서 
+
+m-425px
+t - 768px
+pc -1024px
+
+mobile -> pre 태그 있는 부분 줄이자
+tablet 사이즈보다 

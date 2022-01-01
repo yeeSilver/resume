@@ -22,9 +22,10 @@
             <ul class="list-menu">
                 <li><a href="#">home</a></li>
                 <li><a href="#">about me</a></li>
+                <li><a href="#">skillsets</a></li>
                 <li><a href="#">projects</a></li>
-                <li><a href="#">contact</a></li>
                 <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
                 <!-- html로 blog 직접 구현하기 -->
             </ul>
         </nav>
@@ -39,17 +40,19 @@
         <button class="btn-toggle-menu">
             <img src="./src/icon/hamburger.svg" alt="">
         </button>
-        <button class="btn-mode"><img src="./src/icon/dark_mode.svg" alt=""></button>
-        <nav>
-            <ul class="list-toggle-menu">
-                <!-- <li><button class="btn-menu-mode" id="mode"><img src="./img/light_mode.svg" alt=""></button></li> -->
-                <li><a href="#sec-main">home</a></li>
-                <li><a href="#sec-aboutMe">about me</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#">contact</a></li>
-                <li><a href="#">blog</a></li>
-            </ul>
-        </nav>
+        <div class="con-toggle">
+            <button class="btn-mode"><img src="./src/icon/dark_mode.svg" alt=""></button>
+            <nav>
+                <ul class="list-toggle-menu">
+                    <!-- <li><button class="btn-menu-mode" id="mode"><img src="./img/light_mode.svg" alt=""></button></li> -->
+                    <li><a href="#sec-main">home</a></li>
+                    <li><a href="#sec-aboutMe">about me</a></li>
+                    <li><a href="#">projects</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">blog</a></li>
+                </ul>
+            </nav>
+        </div>
     </article>
 
     <!-- 첫번째 페이지 -->
@@ -109,6 +112,7 @@
     <section class="sec-aboutMe" id="sec-aboutMe">
         <h3>About Me</h3> 
         <div class="con-aboutMe">
+            <div class="img-background-aboutMe"></div>
             <div class="myImg"><img src="./src/img/보리님77.jpg" alt=""></div>
             <div class="txt-aboutMe">
                 <strong>&ldquo; 1 DAY 1 PAGE &rdquo;</strong>
@@ -125,6 +129,21 @@
             <li><p>가독성좋은 README.md</p></li>
             <li><p>세번째</p></li>
         </ul>
+    </section>
+    <!-- skillSet -->
+    <section class="sec-mySkillset">
+        <div class="img-background-mySkillset"></div>
+        <div class="con-mySkillset">
+            <h3>My Skillsets</h3>
+            <ul class="list-skill">
+                <li class="html5"></li>
+                <li class="css3"></li>
+                <li class="js"></li>
+                <li class="react"></li>
+                <li class="sass"></li>
+                <li class="nodeJs"></li>
+            </ul>
+        </div>
     </section>
     <!-- <script src="./javascript/main.js"></script> -->
 </body>

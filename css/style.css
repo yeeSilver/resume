@@ -9,6 +9,7 @@
 @import "./components/m-nav.css";
 @import "./components/intro.css";
 @import "./components/aboutMe.css";
+@import "./components/skill.css";
 
 body{
     font-family: 'Luxurious Roman', cursive;
