@@ -7,10 +7,9 @@
 .art-main{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 60px;
-    /* background-image: url(../img/pink-paper.jpg); */
 }
 .img-background{
     position: absolute;
@@ -18,9 +17,9 @@
     left: 0;
     width: 100%;
     height: 600px;
-    /* background-image: url(../img/pink-paper.jpg); */
     z-index: -100;
 }
+
 /* header-introduce */
 .art-main .head-introduce{
     margin-top: 60px;
@@ -33,6 +32,7 @@
     font-size: 35px;
     font-weight: 900;
 }
+
 /* codebox */
 .box-circle {
     padding: 10px;
@@ -52,7 +52,7 @@
 .box-circle li:nth-child(3){
     background-color: green;
 }
-/* overflow하려면 width, height값이 정해져야 하고 콘텐츠가 크기 값을 넘어갈 때 해당 너비나 높이 값보다 넘어설때 스크롤이 생기게 할 것인지 hidden 처리를 할 것인지를 선택 auto를 하면 넘치면 scroll생김*/
+
 .intro-deco{
     display: flex;
     flex-direction: column;
@@ -67,10 +67,18 @@
     box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 .art-main .intro-deco .cont-codebox div{
-    /* background-color: rgb(240, 234, 234); */
-    /* font-family: 'Ubuntu Mono', monospace; */
+    width: 400px;
+    height: auto;
     padding: 30px;
+    box-sizing: border-box;
     color: rgb(218, 236, 191);
+    font-family: 'Ubuntu Mono', monospace;
+}
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
 }
 
 .box-color{
@@ -84,7 +92,6 @@
     background-color: black;
 }
 .box-color li{
-    /* display: inline-block; */
     width: 40px;
     height: 40px;
     border-radius: 10px;
@@ -102,6 +109,7 @@
 .box-color li:nth-child(4){
     background-color: goldenrod;
 }
+
 /* btn, sns */
 .art-main .intro{
     text-align: center;
@@ -147,7 +155,6 @@
     border-radius: 10px;
     box-shadow: 3px 3px 2px 3px rgba(0, 0, 0, 0.2);
 }
-/* position 남발 금지! */
 .art-main .intro-deco .list-sns li{
     width: 30px;
     height: 30px;

@@ -42,5 +42,4 @@
 .list-skill li:hover{
     transform: scale(1.2);
     cursor: pointer;
-    /* box-shadow: inset 2px 2px 5px grey; */
 }
