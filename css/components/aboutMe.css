@@ -27,8 +27,8 @@ h3{
     z-index: -10;
 }
 .sec-aboutMe div .myImg img{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
 }
 .sec-aboutMe div .myImg{
@@ -45,6 +45,9 @@ h3{
 .sec-aboutMe div .txt-aboutMe strong{
     margin-bottom: 20px;
     font-size: 24px;
+}
+.sec-aboutMe div .txt-aboutMe p{
+    font-size: 12px;
 }
 
 .sec-aboutMe .card-aboutMe{
@@ -63,7 +66,7 @@ h3{
     box-shadow: inset 2px 2px 5px grey;
 }
 
-@media screen and (min-width: 641px){
+@media screen and (min-width: 426px){
     .sec-aboutMe .con-aboutMe{
         display: flex;
         flex-direction: row;
@@ -80,4 +83,11 @@ h3{
     .card-aboutMe{
         margin-top: 50px;
     }
+    .sec-aboutMe div .txt-aboutMe p{
+        font-size: 20px;
+    }
+    p{
+        font-size: 24px;
+    }
+
 }
