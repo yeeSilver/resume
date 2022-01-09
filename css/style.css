@@ -11,11 +11,16 @@
 @import "./components/skill.css";
 @import "./components/fun.css";
 @import "./components/portfolio.css";
+@import "./components/contact.css";
 
 body{
     font-family: 'Luxurious Roman', cursive;
     background-color: #F2D8E4;
 }
+/* body{
+  font-family: 'Ultra', serif;
+  font-family: 'Do Hyeon', sans-serif;
+} */
 .hide{
     display: none;
 }

@@ -225,7 +225,7 @@
             </label> -->
         </div>
 
-        <div class="con-port-desc">
+        <!-- <div class="con-port-desc">
             <label class="desc" for="slide-1" id="desc-1">
                 <h4>title 1</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor atque perspiciatis officia, voluptates, quisquam numquam blanditiis accusantium asperiores vitae, quia rem? Deleniti doloribus totam distinctio illo odit minima dolore.</p>
@@ -238,9 +238,35 @@
                 <h4>title 1</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor atque perspiciatis officia, voluptates, quisquam numquam blanditiis accusantium asperiores vitae, quia rem? Deleniti doloribus totam distinctio illo odit minima dolore.</p>
             </label>    
-        </div>
+        </div> -->
     </section>
 
+    <section class="sec-contact">
+        <h3>Contact Me</h3>
+        <form class="gform" action="https://script.google.com/macros/s/AKfycbzh0KdBBLLy0q4iHyjGWPOb1t40Ap8DeHK5DMH6/exec" method="POST" data-email="an446@naver.com">
+        <fieldset>
+            <!-- 여기서 ul>li보다는 div -->
+            <div>
+                <label for="userName">NAME</label>
+                <input type="text" name="name" id="userName" placeholder="당신의 이름을 적어주세요" required>
+            </div>
+            <div>
+                <label for="userEmail">Email</label>
+                <input type="email" name="email" id="userEmail" placeholder="당신과 연락할 수 있는 이메일을 적어주세요" required>
+            </div>
+            <div>
+                <label for="userMessage">Message</label>
+                <textarea  id="userMessage" name= "message" placeholder="메시지를 적어주세요" required></textarea>
+            </div>
+            <button type="submit" class="btn-send">SEND ME</button>
+            
+            <div style="display:none" class="thankyou_message">
+                <p>연락주셔서 감사합니다. 빠른 시일 내에 답변 드리겠습니다🚀</p>
+            </div>
+        </fieldset>
+    </form>
+    </section>
+    <script data-cfasync="false" type="text/javascript" src="./js/contact.js"></script>
     <!-- <script src="./javascript/main.js"></script> -->
 </body>
 </html>
