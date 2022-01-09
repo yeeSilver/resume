@@ -10,10 +10,14 @@
 @import "./components/aboutMe.css";
 @import "./components/skill.css";
 @import "./components/fun.css";
+@import "./components/portfolio.css";
 
 body{
     font-family: 'Luxurious Roman', cursive;
     background-color: #F2D8E4;
+}
+.hide{
+    display: none;
 }
 /* css는 css끼리! */
 /*font-family: 'Do Hyeon', sans-serif;
