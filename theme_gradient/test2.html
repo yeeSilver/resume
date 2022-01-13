@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes cursor-blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orangered;
+  }
+}
+      :root {
+  --background-color: #212121;
+  --font: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--background-color);
+  font-family: var(--font);
+}
+#typing {
+  display: block;
+  color: rgb(172, 115, 115);
+  overflow: hidden;
+  border-right: 0.15em solid orangered;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(30, end) infinite,
+    cursor-blink 0.75s step-end infinite;
+}
+
+
+  </style>
+</head>
+<body>
+  <p class="typing" id="typing">You had me at 'hello'.</p>
+  <p>3&nbsp;&nbsp;&nbsp;&nbsp;this.name = <strong id="typing">"You had me at 'hello'Yeeun An";</strong></p>
+</body>
+</html>

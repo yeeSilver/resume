@@ -1,0 +1,96 @@
+.sec-aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: var(--second-color);
+    font-family: 'Do Hyeon', sans-serif;
+}
+.sec-aboutMe div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h3{
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+.sec-aboutMe .con-aboutMe{
+    position: relative;
+    width: 100%;
+}
+.sec-aboutMe .con-aboutMe .img-background-aboutMe {
+    position: absolute;
+    top: 25px;
+    width: 70%;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgba(255, 254, 254, 0.849);
+    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    /* background-color: #D98BA7; */
+    z-index: -10;
+}
+.sec-aboutMe div .myImg img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.sec-aboutMe div .myImg{
+    border-radius: 50%;
+    box-shadow: -2px 2px 20px 1px rgba(0, 0, 0, 0.2)
+}
+.sec-aboutMe div .txt-aboutMe{
+    margin-top: 30px;
+    padding: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--second-color)
+}
+.sec-aboutMe div .txt-aboutMe strong{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.sec-aboutMe div .txt-aboutMe p{
+    font-size: 12px;
+}
+
+.sec-aboutMe .card-aboutMe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sec-aboutMe .card-aboutMe li{
+    min-width: 200px;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: var(--third-color);
+    text-align: center;
+    font-size: 16px;
+    box-shadow: inset 2px 2px 5px grey;
+}
+
+/* @media screen and (min-width: 426px){
+    .sec-aboutMe .con-aboutMe{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 40px;
+    }
+    .sec-aboutMe h3{
+        margin: 50px 0;
+    }
+    .sec-aboutMe div .myImg img{
+        height: 300px;
+        width: 300px;
+    }
+    .card-aboutMe{
+        margin-top: 50px;
+    }
+    .sec-aboutMe div .txt-aboutMe p{
+        font-size: 20px;
+    }
+} */

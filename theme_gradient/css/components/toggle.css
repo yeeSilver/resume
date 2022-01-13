@@ -1,0 +1,8 @@
+/* 토글 클래스 */
+.dark{
+    color: rgb(207, 206, 206);
+    background-color: rgb(63, 63, 63);
+}
+.toggle{
+    display: none;
+}

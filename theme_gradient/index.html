@@ -48,57 +48,52 @@
     </article>
 
     <!-- 첫번째 페이지 -->
-    <section class="sec-main" id="sec-main">
-        <div class="img-background"></div>
-        <article class="art-main">
-            <div class="intro">
-                <h2 class="head-introduce">
-                    <strong>YEEUN AN</strong>
-                    <p class="txt-job">CREATIVE FRONT-END WEB DEVELOPER</p>
-                    <p class="txt-hello">Hello World</p>
-                </h2>
-                <div class="btn-down-resume"><a href="./src/img/보리님편집.jpg" download="YeeunAn resume">Download Resume</a></div>
-                <ul class="list-sns">
-                    <!-- item-github으로 바꾸기 -->
-                    <li class="github"><a href="">
-                        <img src="./src/sns/github.svg" alt="github address">
-                    </a></li>
-                    <li class="velog"><a href="">
-                        <img src="./src/sns/vimeo.svg" alt="">
-                    </a></li>
-                    <li class="insta"><a href="">
-                        <img src="./src/sns/instagram.svg" alt="">
-                    </a></li>
+    <section id="sec-main">
+        <div class="intro-deco">
+            <div class="intro-txt">
+                <h2>YEEUN AN</h2>
+                <span>Hi There✋</span>
+            </div>
+            <div class="cont-codebox">
+                <ul class="box-circle">
+                    <li></li>
+                    <li></li>
+                    <li></li>
                 </ul>
-                <!-- section or div ? -->
-            </div>
-            <div class="intro-deco">
-                <div class="cont-codebox">
-                    <ul class="box-circle">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <div>
-                        <pre>1&nbsp;class Person{</pre>
-                        <pre>2&nbsp;&nbsp;&nbsp;constructor(){</pre>
-                        <pre>3&nbsp;&nbsp;&nbsp;&nbsp;this.name = "<b>Yeeun An</b>";</pre>
-                        <pre>4&nbsp;&nbsp;&nbsp;&nbsp;this.skills = ["Html", "Css", "JS"];</pre>
-                        <pre>5&nbsp;&nbsp;&nbsp;&nbsp;this.age =</pre>
-                        <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new Date().getFullYear()-1998+1;</pre>
-                        <pre>6&nbsp;&nbsp;&nbsp;}</pre>
-                        <pre>7&nbsp;};</pre>
-                    </div>
-
-                    <ul class="box-color">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                <div>
+                    <p>1&nbsp;class Person{</p>
+                    <p>2&nbsp;&nbsp;&nbsp;constructor(){</p>
+                    <p>3&nbsp;&nbsp;&nbsp;&nbsp;this.name = <span id="typing">"Yeeun An";</span></sp>
+                    <p>4&nbsp;&nbsp;&nbsp;&nbsp;this.job =</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Front-End Web Developer";</p>
+                    <p>5&nbsp;&nbsp;&nbsp;&nbsp;this.age =</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new Date().getFullYear()-1998+1;</p>
+                    <p>6&nbsp;&nbsp;&nbsp;}</p>
+                    <p>7&nbsp;};</p>
                 </div>
+
+                <!-- <ul class="box-color">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul> -->
             </div>
-        </article>
+            <div class="btn-down-resume"><a href="./src/img/보리님편집.jpg" download="YeeunAn resume">Download Resume</a>
+            </div>
+            <ul class="list-sns">
+                <li>
+                    <a href="" id="item-github">
+                        <img src="./src/sns/github.svg" alt="github address">
+                    </a>
+                </li>
+                <li>
+                    <a href="" id="item-velog">
+                        <img src="./src/sns/vimeo.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </section>
     
     <!-- about me -->
@@ -113,8 +108,10 @@
                     성실하게 나아가자!라는 마음가짐으로 성장하고 있는 <br>밝은 거북이, <strong>안예은</strong> 입니다.   
                 </p>
                 <p>
-                    commit 메시지와 branch 단위에 대해 생각하는 것을 좋아합니다. <br>팀원들과 협업에 있어서 효율적인 방안을 고려하고 나아가는 개발자이자 듬직한 팀원이 되기 위해 노력중입니다.
+                    commit 메시지와 branch 단위에 대해 생각하는 것을 좋아합니다.
                 </p>
+                <p>팀원들과 협업에 있어서 효율적인 방안을 고려하고 <br>나아가는 개발자이자 듬직한 팀원이 되기 위해 노력중입니다.</p> 
+                
             </div> 
         </div>
         <ul class="card-aboutMe">
@@ -126,8 +123,6 @@
 
     <!-- skillSet -->
     <section class="sec-mySkillset">
-        <div class="img-background-mySkillset"></div>
-        <div class="con-mySkillset">
             <h3>My Skillsets</h3>
             <ul class="list-skill">
                 <li class="html5"></li>
@@ -137,7 +132,6 @@
                 <li class="sass"></li>
                 <li class="nodeJs"></li>
             </ul>
-        </div>
     </section>
 
     <!-- just for fun -->
@@ -184,6 +178,7 @@
         <input type="radio" name ="slider" id ="slide-2">
         <input type="radio" name ="slider" id ="slide-3">
         <!-- <input type="radio" name ="slider" id ="slide-4"> -->
+
         
         <div class="con-slides">
             <label class="slide" for="slide-1" id="port-1">
@@ -225,20 +220,20 @@
             </label> -->
         </div>
 
-        <!-- <div class="con-port-desc">
-            <label class="desc" for="slide-1" id="desc-1">
+        <div class="con-port-desc">
+            <label class="desc" for="slide-1">
                 <h4>title 1</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor atque perspiciatis officia, voluptates, quisquam numquam blanditiis accusantium asperiores vitae, quia rem? Deleniti doloribus totam distinctio illo odit minima dolore.</p>
             </label>    
-            <label class="desc" for="slide-2" id="desc-2">
-                <h4>title 1</h4>
+            <label class="desc" for="slide-2">
+                <h4>title 2</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor atque perspiciatis officia, voluptates, quisquam numquam blanditiis accusantium asperiores vitae, quia rem? Deleniti doloribus totam distinctio illo odit minima dolore.</p>
             </label>
-            <label class="desc" for="slide-3" id="desc-3">
-                <h4>title 1</h4>
+            <label class="desc" for="slide-3">
+                <h4>title 3</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor atque perspiciatis officia, voluptates, quisquam numquam blanditiis accusantium asperiores vitae, quia rem? Deleniti doloribus totam distinctio illo odit minima dolore.</p>
             </label>    
-        </div> -->
+        </div>
     </section>
 
     <section class="sec-contact">

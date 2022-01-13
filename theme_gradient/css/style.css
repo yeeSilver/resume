@@ -1,0 +1,53 @@
+@charset "utf-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Luxurious+Roman&family=Sigmar+One&family=Stint+Ultra+Condensed&family=Ubuntu+Mono&family=Ultra&display=swap');
+
+@import "./reset.css";
+@import "./variable.css";
+@import "./components/header.css";
+@import "./components/toggle.css";
+@import "./components/m-nav.css";
+@import "./components/intro.css";
+@import "./components/aboutMe.css";
+@import "./components/skill.css";
+@import "./components/fun.css";
+@import "./components/portfolio.css";
+@import "./components/contact.css";
+
+body{
+    font-family: 'Luxurious Roman', cursive;
+    background: linear-gradient(to bottom,#fff2f2, rgb(155, 212, 229), rgb(241, 137, 148) , rgba(53,92,125,1));
+}
+/* body{
+  font-family: 'Ultra', serif;
+  font-family: 'Do Hyeon', sans-serif;
+} */
+
+h3{
+  margin-bottom: 50px;
+  color: var(--second-color);
+}
+h4{
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 24px;
+  color: var(--forth-color);
+}
+.section{
+  height: 100vh;
+}
+.hide{
+    display: none;
+}
+/* css는 css끼리! */
+/*font-family: 'Do Hyeon', sans-serif;
+font-family: 'Luxurious Roman', cursive;
+font-family: 'Sigmar One', cursive;
+font-family: 'Stint Ultra Condensed', cursive;
+font-family: 'Ubuntu Mono', monospace;
+font-family: 'Ultra', serif;*/
+
+
+
+
+
+

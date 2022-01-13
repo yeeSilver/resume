@@ -1,0 +1,54 @@
+ /* mobile-navbar */
+.mobile-menu{
+    position: fixed;
+    right: 10px;
+    top: 0;
+    z-index: 100;
+}
+.mobile-menu .btn-toggle-menu, 
+.mobile-menu .btn-mode{
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin: 5px auto;
+    border-radius: 50%;
+    border: none;
+    background-color: #D98BA7;
+    cursor: pointer;
+}
+.mobile-menu .btn-toggle-menu img:hover{
+    content: url(../../src/icon/close.svg);
+}
+.con-toggle{
+    display: none;
+    opacity: 0;
+}
+.list-toggle-menu li{
+    margin: 5px 0;
+    transition: all .3s;
+}
+.list-toggle-menu li a{
+    display: block;
+    width: 60px;
+    padding: 15px;
+    border-radius: 10px;
+    color: #BDEDF2;
+    background-color: #D98BA7;
+    text-align: center;
+}
+.list-toggle-menu li:hover, .btn-mode:hover{
+    font-weight: bold;
+    transform: scale(0.9);
+}
+.btn-toggle-menu:hover + .con-toggle{
+    display: block;
+    opacity: 1;
+}
+
+
+@media screen and (min-width: 769px){
+    .mobile-menu{
+        display: none;
+    }
+
+}

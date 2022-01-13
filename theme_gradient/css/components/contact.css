@@ -20,6 +20,7 @@
   flex-direction: column;
   justify-content: center;
   width: 60%;
+  color: whitesmoke;
   border: 3px solid whitesmoke;
   border-radius: 10px;
   padding: 30px;
@@ -55,11 +56,13 @@
 .sec-contact fieldset input:focus {
   outline:none;
 }
-.sec-contact fieldset input + textarea::placeholder {
-  font-size: 1rem;
-  color: #D98BA7;
+.sec-contact fieldset input::placeholder,
+.sec-contact fieldset textarea::placeholder {
+  color: #cab9bf;
 }
-.sec-contact .textarea{
+.sec-contact fieldset textarea,
+.sec-contact fieldset input{
+  color: whitesmoke;
   resize: none;
 }
 .thankyou_message{

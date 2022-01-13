@@ -1,0 +1,111 @@
+.sec-portfolio input{
+  display: none;
+}
+.sec-portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.con-slides{
+  position: relative;
+  width: 100%;
+  height: 55%;
+  margin-bottom: 20px;
+}
+.con-slides .slide{
+  height: 100%;
+  width: 60%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+.con-slides .slide div{
+  width: 100%;
+  height: 100%;
+}
+.con-slides .slide img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.slide div{
+  position: relative;
+}
+.slide div .list-link{
+  display: none;
+}
+.list-link li a{ 
+  background-color: rgba(121, 109, 109, 0.808);
+  color: whitesmoke;
+}
+
+#slide-1:checked ~ .con-slides .slide:nth-child(1):hover .list-link,
+#slide-2:checked ~ .con-slides .slide:nth-child(2):hover .list-link,
+#slide-3:checked ~ .con-slides .slide:nth-child(3):hover .list-link{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+}
+#slide-1:checked ~ .con-slides #port-3, 
+#slide-2:checked ~ .con-slides #port-1, 
+#slide-3:checked ~ .con-slides #port-2{
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+#slide-1:checked ~ .con-slides #port-2, 
+#slide-2:checked ~ .con-slides #port-3, 
+#slide-3:checked ~ .con-slides #port-1 {
+  transform: translatex(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+#slide-1:checked ~ .con-slides #port-1, 
+#slide-2:checked ~ .con-slides #port-2, 
+#slide-3:checked ~ .con-slides #port-3{
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+#slide-1:checked ~ .con-slides #port-1 img,
+#slide-2:checked ~ .con-slides #port-2 img,
+#slide-3:checked ~ .con-slides #port-3 img{
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+.con-port-desc {
+  height: 7em;
+  width: 25em;
+  overflow: hidden;
+  padding: 15px;
+  /* border: double 2px white ; */
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+}
+.con-port-desc label{
+  /* 라벨태그에 마진줄 때는 inline-block으로 하고! */
+  display:inline-block;
+  margin-bottom: 15px;
+}
+.con-port-desc p{
+  font-size: 1rem;
+}
+#slide-2:checked ~ .con-port-desc .desc{
+  transform: translateY(-129px);
+}
+#slide-3:checked ~ .con-port-desc .desc {
+  transform: translateY(-258px);
+}
+#slide-1:checked ~ .con-port-desc .desc{
+  transform: translateY(0);
+}

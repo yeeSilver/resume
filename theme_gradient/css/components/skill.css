@@ -1,0 +1,44 @@
+
+.sec-mySkillset{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vw;
+}
+
+.list-skill{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.list-skill li{
+    width: 100px;
+    height: 100px;
+    background: url(../../src/icon/css_sprites_darkpink.png) no-repeat;
+    transition: all .2s;
+}
+.list-skill .html5{
+    background-position: -10px -130px;
+}
+.list-skill .css3{
+    background-position: -10px -10px;
+}
+.list-skill .js{
+    background-position: -130px -10px;
+}
+.list-skill .react{
+    background-position: -250px -10px;
+}
+.list-skill .sass{
+    background-position: -250px -130px;
+}
+.list-skill .nodeJs{
+    background-position: -130px -130px;
+}
+
+.list-skill li:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
